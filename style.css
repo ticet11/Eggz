@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+}
+
+.links-wrapper {
+    margin: 10px;
+}
+
+.links-wrapper a {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.logo-wrapper h1 {
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.container > .content-wrapper > .hero-wrapper img {
+    width: 75vw;
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3em;
+    margin-top: 40px;
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .egg {
+    color: rgb(204, 146, 70);
+}
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .book {
+    color: rgb(100, 61, 10);
+}
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .plane {
+    color: rgb(85, 81, 77);
+}
