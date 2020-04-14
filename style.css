@@ -1,5 +1,22 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang&family=Open+Sans&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
 body {
     margin: 0;
+    /* font-family: 'Be Vietnam', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .container {
@@ -13,14 +30,16 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 80vw;
+    
 }
 
 .links-wrapper {
     margin: 10px;
+    
 }
 
 .links-wrapper a {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 600;
     text-decoration: none;
     color: black;
@@ -31,9 +50,19 @@ body {
     border-radius: 10px;
 }
 
+.links-wrapper a:hover {
+    background-color: #643d0a;
+    color: white;
+}
+
 .logo-wrapper h1 {
     margin: 0;
     padding: 20px 0 20px 0;
+    font-family: 'fahkwang', sans-serif;
+}
+
+.navigation-wrapper > .toggle {
+    display: none;
 }
 
 .content-wrapper {
@@ -45,23 +74,103 @@ body {
     padding-right: 10vw;
 }
 
+.container > .content-wrapper > .hero-wrapper {
+    width: 65vw;
+}
+
 .container > .content-wrapper > .hero-wrapper img {
-    width: 75vw;
+    width: 100%;
+    border: 5px solid black;
+    border-radius: 10px;
 }
 
 .container > .content-wrapper > .hero-wrapper > .image-box-wrapper {
     display: flex;
     justify-content: space-around;
-    font-size: 3em;
+    font-size: 5em;
     margin-top: 40px;
 }
 
-.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .egg {
-    color: rgb(204, 146, 70);
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper p {
+    font-size: 1rem;
+    
 }
-.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .book {
-    color: rgb(100, 61, 10);
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 2em;
+    height: 2em;
 }
-.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .plane {
-    color: rgb(85, 81, 77);
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .image-box > .egg {
+    color: #cc9246;
+    text-decoration: none;
+    width: 100%;
 }
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .image-box > .egg:hover {
+    color: white;
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .egg-box:hover {
+    background-color: #cc9246; 
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .image-box > .book {
+    color: #643d0a;
+    text-decoration: none;
+    width: 100%;
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .image-box > .book:hover {
+    color: white;
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .book-box:hover {
+    background-color: #643d0a; 
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .image-box > .plane {
+    color: #55514d;
+    text-decoration: none;
+    width: 100%;
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .plane-box:hover {
+    background-color: #55514d;
+}
+
+.container > .content-wrapper > .hero-wrapper > .image-box-wrapper > .image-box > .plane:hover {
+    color: white;
+}
+
+.container footer {
+    margin-top: 50px;
+    font-size: .75em;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navigation-wrapper {
+        height: 60px;
+        align-items: flex-start;
+    }
+
+    .links-wrapper {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+
+    }
+    
+  }
+
+  @media only screen and (min-width: 769px) {
+    .navigation-wrapper > .toggle {
+        display: none;
+    }
+  }
